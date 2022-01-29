@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'Museo Cyrl 700';
+    src: url(fonts/MuseoCyrl-700.woff2) format('woff2'),
+        url(fonts/MuseoCyrl-700.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/OpenSans-SemiBold.woff2) format('woff2'),
+        url(fonts/OpenSans-SemiBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/OpenSans-Regular.woff2) format('woff2'),
+        url(fonts/OpenSans-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Cyrl 900';
+    src: url(fonts/MuseoCyrl-900.woff2) format('woff2'),
+        url(fonts/MuseoCyrl-900.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ALS Rubl';
+    src: url(fonts/ALSRubl.woff2) format('woff2'),
+        url(fonts/ALSRubl.woff) format('woff'),
+        url(fonts/rouble.otf) format('otf'),
+        url(fonts/rouble.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: auto;
+    background-color: #e0e0e0;
+    /* не знаю как получить нужный фон и фотошопа */
+    position: relative;
+    top: -381px;
+}
+
+h2 {
+    font-family: "Museo Cyrl 700", Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.white-background {
+    background-color: #ffffff;
+    width: 100%;
+    height: 381px;
+    position: relative;
+    z-index: -1;
+    top: 325px;
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        margin: 5px;
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 5vw;
+    }
+}
+
+/* Отделка балконов и лоджий начало */
+.works {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1170px;
+    margin: 45px auto;
+    text-align: center;
+    position: relative;
+    left: -3px;
+    height: 558px;
+}
+
+@media (max-width: 1200px) {
+    .works {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .works img {
+        width: 70vw;
+    }
+
+}
+
+.works div {
+    margin: 15px;
+    background-color: white;
+
+}
+
+
+.works_name {
+    font-family: "Museo Cyrl 700", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 37px;
+    position: relative;
+    bottom: 35px
+}
+
+@media (max-width: 1200px) {
+    .works_name {
+        font-size: 3vw;
+        margin: -30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .works_name {
+        font-size: 4vw;
+    }
+}
+
+
+.works_button {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: none;
+    width: 130px;
+    height: 50px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #4d59a1;
+    color: white;
+    position: relative;
+    bottom: 62px;
+
+    /* cursor: url("img/mouse-cursor.jpg"), pointer;  */
+    /* курсор вырезается с белым окружением */
+}
+
+@media (max-width: 1200px) {
+    .works_button {
+        width: 70vw;
+    }
+}
+
+/* Отделка балконов и лоджий конец */
+
+/* Варианты отедлки балконов и лоджий */
+.variants {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.variants_logo {
+    margin-top: 56px;
+    margin-left: -5px;
+
+}
+
+.variants .text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    max-width: 1091px;
+    line-height: 24px;
+    margin-top: 1.2px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.variants__cards {
+    max-width: 1170px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 35px;
+}
+
+.__cards_plastic {
+    width: 386px;
+    height: 450px;
+    background-image: url(/img/__cards_plastic.jpg);
+    margin-left: -8px;
+}
+
+.__cards__wood {
+    width: 386px;
+    height: 450px;
+    background-image: url(/img/__cards_wood.jpg);
+    margin-left: 5px;
+}
+.__cards__wood_text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+    width: 290px;
+    height: 101px;
+    padding-left: 41px;
+    padding-top: 3px;
+}
+
+.__cards_drywall {
+    width: 386px;
+    height: 450px;
+    background-image: url(/img/__cards_drywall.jpg);
+    margin-left: 5px;
+}
+
+
+.__cards_name {
+    font-family: "Museo Cyrl 700", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-top: 44px;
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+
+
+.__cards__price {
+    font-family: "Museo Cyrl 700", Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 24px;
+    padding-top: 205px;
+    padding-left: 40px;
+    font-size: 24px;
+}
+.__cards_button {
+    width: 150px;
+    height: 50px;
+    background-color: #ff5f01;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    margin-top: 89px;
+    margin-left: -2px;
+}
+
+.__cards_paint-wallpaper {
+    width: 582px;
+    height: 300px;
+    background-image: url(img/__cards_paint-wallpaper.jpg);
+    margin-top: 5px;
+    margin-left: -8px;
+  }
+  .__cards_paint-wallpaper .__cards_name {
+      padding-top: 30px;
+      padding-left: 42px;
+  }
+  .__cards_paint-wallpaper .__cards__price {
+      padding-top: 110px;
+  }
+
+  .__cards_laminate {
+    width: 582px;
+    height: 300px;
+    background-image: url(img/__cards_laminate.jpg);
+    margin-top: 5px;
+  }
+  .__cards_laminate .__cards_name {
+    padding-top: 30px;
+    padding-left: 42px;
+  }
+  .__cards_laminate .__cards__price {
+    padding-top: 110px;
+  }
+  
+._price_number {
+    font-family: 'Museo Cyrl 900', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+._price_rub {
+    font-family: 'ALS Rubl', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+
+.__cards_vinil {
+    width: 386px;
+    height: 450px;
+    background-image: url(img/__cards_vinil.jpg);
+}
