@@ -45,12 +45,24 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/OpenSans-Bold.woff2) format('woff2'),
+        url(fonts/OpenSans-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 body {
     margin: auto;
     background-color: #e0e0e0;
     /* не знаю как получить нужный фон и фотошопа */
-    position: relative;
-    top: -381px;
+    background-image: url(img/white-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 381px;
 }
 
 h2 {
@@ -89,15 +101,13 @@ h2 {
     max-width: 1170px;
     margin: 45px auto;
     text-align: center;
-    position: relative;
-    left: -3px;
-    height: 558px;
 }
 
 @media (max-width: 1200px) {
     .works {
         flex-direction: column;
         margin: 5px;
+       
     }
 
     .works img {
@@ -124,7 +134,6 @@ h2 {
 @media (max-width: 1200px) {
     .works_name {
         font-size: 3vw;
-        margin: -30px;
     }
 }
 
@@ -148,9 +157,7 @@ h2 {
     color: white;
     position: relative;
     bottom: 62px;
-
-    /* cursor: url("img/mouse-cursor.jpg"), pointer;  */
-    /* курсор вырезается с белым окружением */
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -197,14 +204,14 @@ h2 {
 .__cards_plastic {
     width: 386px;
     height: 450px;
-    background-image: url(/img/__cards_plastic.jpg);
+    background-image: url(img/__cards_plastic.jpg);
     margin-left: -8px;
 }
 
 .__cards__wood {
     width: 386px;
     height: 450px;
-    background-image: url(/img/__cards_wood.jpg);
+    background-image: url(img/__cards_wood.jpg);
     margin-left: 5px;
 }
 .__cards__wood_text {
@@ -221,7 +228,7 @@ h2 {
 .__cards_drywall {
     width: 386px;
     height: 450px;
-    background-image: url(/img/__cards_drywall.jpg);
+    background-image: url(img/__cards_drywall.jpg);
     margin-left: 5px;
 }
 
@@ -258,6 +265,7 @@ h2 {
     border-radius: 3px;
     margin-top: 89px;
     margin-left: -2px;
+    cursor: pointer;
 }
 
 .__cards_paint-wallpaper {
@@ -303,4 +311,230 @@ h2 {
     width: 386px;
     height: 450px;
     background-image: url(img/__cards_vinil.jpg);
+    margin-left: -8px;
+    margin-top: 5px;
 }
+
+.__cards__out {
+    width: 386px;
+    height: 450px;
+    background-image: url(img/__cards__out.jpg);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.__cards__consultation {
+    width: 376px;
+    height: 440px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ff5f01;
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.__consultation_logo {
+    font-family: "Museo Cyrl 700", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.__consultation_name {
+    width: 316px;
+    height: 42px;
+}
+
+.__consultation_phone {
+    width: 150px;
+    height: 42px;
+}
+
+.__consultation_email {
+    width: 150px;
+    height: 42px;
+}
+
+.__consultation_category {
+    width: 316px;
+    height: 42px;
+}
+
+.__consultation_comment {
+width: 316px;
+height: 60px;
+}
+
+.__consultation_agreement {
+    font-family: 'Open Sans' Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.__consultation__button {
+    background-color: #ff5f01;
+    width: 101px;
+    height: 42px;
+}
+
+.__consultation__button_span {
+    font-family: 'Open Sans' Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+/* Варианты отедлки балконов и лоджий конец*/
+
+/* Идеи по отделке балконов и лоджий   */
+
+.__ideas { 
+    background-color: white;
+    
+}
+
+.__ideas__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 45px auto;
+}
+
+
+.__ideas__office__text-area {
+width: 370px;
+height: 70px;
+background-color: #e6e6e6;
+}
+
+.__ideas__office__text-area_text {
+   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 60px;
+}
+
+.__ideas__cards__style_img {
+    width: 370px;
+    height: 240px;
+    background-image: url(img/__ideas__cards_style.jpg);
+}
+
+.__ideas__cards__style_button {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 55px;
+    background-color: #4d59a1;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+}
+/* Идеи по отделке балконов и лоджий конец  */
+
+/* Параметры отделки: цена за кв.метр    */
+.__parameters__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 1170px;
+    background-color: khaki;
+}
+.__parameters__cards__wall {
+    width: 370px;
+    height: 480px;
+    background-color: white;
+}
+
+.__parameters__cards__wall__lining-a {
+    display: flex;
+}
+
+.__paremeters__cards__wall_img {
+    margin-top: -100px;
+}
+
+.__parameters__cards__wall__lining-a_text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.__parameters__cards__wall__lining-a__price {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+    color: #4d59a1;
+}
+
+.__parameters__cards__wall__lining-a__price_rub {
+    font-family: 'AlS Rubl', Arial, Helvetica, sans-serif;
+}
+
+
+/* Цены на виды отделки   */
+
+.__prices__cards {
+    display: flex;
+    margin: 0px auto;
+    width: 1170px;
+}
+
+.__prices__cards__economy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.__prices__cards__economy__text-area {
+    background-color: white;
+    width: 480px;
+    height: 370px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.__prices__cards__economy__text-area_name {
+font-family: 'Museo Cyrl', Arial, Helvetica, sans-serif;
+font-weight: 700;
+font-size: 25px;
+line-height: 60px;
+}
+
+.__prices__cards__economy__text-area__text__price {
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+.__prices__cards__economy__text-area__text__price_orange {
+color: #ff5f01;
+}
+
+.__prices__cards__economy__text-area__text__price_number {
+    font-size: 24px;
+}
+
+.__prices__cards__economy__text-area_button {
+    width: 130px;
+    height: 50px;
+    background-color: #ff5f01;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.__prices__cards__economy__img-area {
+    background-color: #2f3a81;
+    width: 690px;
+    height: 430px;
+}
+
+
+
