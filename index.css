@@ -442,6 +442,7 @@ background-color: #e6e6e6;
     margin: 0px auto;
     width: 1170px;
     background-color: khaki;
+    margin-top: 130px;
 }
 .__parameters__cards__wall {
     width: 370px;
@@ -449,29 +450,60 @@ background-color: #e6e6e6;
     background-color: white;
 }
 
+
+.__parameters__cards .name {
+    font-family: 'Museo Cyrl', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.__parameters__cards .line {
+    border-top: 1px dashed #000; 
+}
+
 .__parameters__cards__wall__lining-a {
     display: flex;
+}
+.__parameters__cards__wall__lining-extra {
+    display: flex;
+}
+.__parameters__cards__wall__lining-pfh {
+    display: flex;
+}
+.__parameters__cards__wall__panel-mdf {
+    display: flex;
+}
+.__parameters__cards__wall__panel-pfh {
+display: flex;
+}
+.__parameters__cards__wall__panel-laminated {
+    display: flex; 
 }
 
 .__paremeters__cards__wall_img {
     margin-top: -100px;
+    margin-left: 30px;
 }
 
-.__parameters__cards__wall__lining-a_text {
+.__parameters__cards .text {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 14px;
+    padding-left: 20px;
 }
 
-.__parameters__cards__wall__lining-a__price {
+.__parameters__cards .price {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 32px;
     color: #4d59a1;
+   
+    
 }
 
-.__parameters__cards__wall__lining-a__price_rub {
+.__parameters__cards .rub {
     font-family: 'AlS Rubl', Arial, Helvetica, sans-serif;
 }
 
